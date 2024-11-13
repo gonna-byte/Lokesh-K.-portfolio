@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lokesh K.'s Video Editing Portfolio">
+    <title>Lokesh K. | Video Editor Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .portfolio-item {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+        .portfolio-item img, .portfolio-item video {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills .skill {
+            background-color: #eee;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        /* Contact */
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Lokesh K.</h1>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello, I'm <strong>Lokesh K.</strong> – a video editor passionate about telling stories through visuals. Explore my work below.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <!-- Portfolio items, add more as needed -->
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="sample-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 1</p>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="sample-video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Project Title 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Adobe Premiere Pro</div>
+            <div class="skill">Final Cut Pro</div>
+            <div class="skill">After Effects</div>
+            <div class="skill">DaVinci Resolve</div>
+            <div class="skill">Color Grading</div>
+            <div class="skill">Storyboarding</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated video editor with a strong background in storytelling and technical skills in editing software. With a keen eye for detail, I bring a creative touch to each project, helping brands and individuals tell their unique stories through engaging visuals.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:lokeshk@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Lokesh K. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
